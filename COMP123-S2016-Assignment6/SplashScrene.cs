@@ -10,16 +10,19 @@ using System.Windows.Forms;
 
 namespace COMP123_S2016_Assignment6
 {
-    public partial class Form1 : Form
+    public partial class SplashScrene : Form
     {
-        public Form1()
+        public Form1 FirstForm = Program.FirstForm;
+        public SplashScrene()
         {
             InitializeComponent();
         }
 
-        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            Application.Exit();
+            timer1.Enabled = false;
+            FirstForm.Show();
+            this.Hide();
         }
     }
 }

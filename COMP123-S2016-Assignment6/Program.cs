@@ -6,8 +6,10 @@ using System.Windows.Forms;
 
 namespace COMP123_S2016_Assignment6
 {
-    static class Program
+   public static class Program
     {
+        public static SplashScrene SplashScrene;
+        public static Form1 FirstForm;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +18,11 @@ namespace COMP123_S2016_Assignment6
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            FirstForm = new Form1();
+            SplashScrene = new SplashScrene();
+
+            Application.Run(SplashScrene);
         }
     }
 }
