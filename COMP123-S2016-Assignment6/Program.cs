@@ -9,7 +9,7 @@ namespace COMP123_S2016_Assignment6
    public static class Program
     {
         public static SplashScrene SplashScrene;
-        public static Form1 FirstForm;
+        public static BmiCalculator FirstForm;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -19,7 +19,7 @@ namespace COMP123_S2016_Assignment6
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            FirstForm = new Form1();
+            FirstForm = new BmiCalculator();
             SplashScrene = new SplashScrene();
 
             Application.Run(SplashScrene);

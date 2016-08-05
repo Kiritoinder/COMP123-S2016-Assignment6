@@ -12,7 +12,7 @@ namespace COMP123_S2016_Assignment6
 {
     public partial class SplashScrene : Form
     {
-        public Form1 FirstForm = Program.FirstForm;
+        public BmiCalculator FirstForm = Program.FirstForm;
         public SplashScrene()
         {
             InitializeComponent();
